@@ -1,0 +1,20 @@
+Package: cobbdoubglasge
+Title: Edgeworth Box with Contract Curves
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "firstname",
+           family = "lastname",
+           role = c("aut", "cre"),
+           email = "your@email.com")
+Description: A Shiny app to visualize an Edgeworth box with contract curve for the 2x2 exchange model using Cobb-Douglas
+    utility functions.
+License: Apache License (>= 2)
+Imports: 
+    config,
+    golem,
+    shiny,
+    ggplot2,
+    dplyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
