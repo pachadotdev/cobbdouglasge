@@ -47,7 +47,7 @@ usethis::use_test("app")
 # Documentation
 
 ## Vignette ----
-usethis::use_vignette("cobbdoubglasge")
+usethis::use_vignette("cobbdouglasge")
 devtools::build_vignettes()
 
 ## Code Coverage----

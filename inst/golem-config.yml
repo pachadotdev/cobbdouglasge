@@ -1,5 +1,5 @@
 default:
-  golem_name: cobbdoubglasge
+  golem_name: cobbdouglasge
   golem_version: 0.0.0.9000
   app_prod: no
 
