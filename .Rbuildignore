@@ -6,3 +6,6 @@ dev_history.R
 $run_dev.*
 ^.here$
 ^LICENSE\.md$
+^app\.R$
+^rsconnect$
+^\.rscignore$

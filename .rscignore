@@ -1,0 +1,9 @@
+.here
+CODE_OF_CONDUCT.md
+LICENSE*
+NEWS*
+README*
+dev
+man
+vignettes
+tests

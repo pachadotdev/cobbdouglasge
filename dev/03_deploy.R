@@ -37,6 +37,11 @@ golem::add_positconnect_file()
 golem::add_shinyappsio_file()
 golem::add_shinyserver_file()
 
+golem::add_shinyappsio_file()
+remotes::install_github("pachadotdev/cobbdouglasge")
+use_git_ignore("rsconnect/")
+rsconnect::deployApp())
+
 ## Deploy to Posit Connect or ShinyApps.io ----
 
 ## Add/update manifest file (optional; for Git backed deployment on Posit )
