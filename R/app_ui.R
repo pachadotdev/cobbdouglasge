@@ -40,26 +40,30 @@ app_ui <- function(request) {
                       "Normalize to 1:",
                       choices = list("Price of Good 1" = "p1",
                                    "Price of Good 2" = "p2"),
-                      selected = "p2"),
-          
-          h4("Equilibrium Information"),
-          verbatimTextOutput("equilibrium_info")
+                      selected = "p2")
         ),
         
         mainPanel(
           width = 10,
-          plotOutput("edgeworth_plot", height = "650px"),
-          br(),
-          h4("Utility Functions"),
-          p("Consumer 1's utility function:"),
-          withMathJax("$$U_{1}(x_{1}^{1}, x_{2}^{1}) = (x_{1}^{1})^{\\alpha} (x_{2}^{1})^{1-\\alpha}$$"),
-          p("Consumer 2's utility function:"),
-          withMathJax("$$U_{2}(x_{1}^{2}, x_{2}^{2}) = (x_{1}^{2})^{\\beta} (x_{2}^{2})^{1-\\beta}$$"),
-          br(),
-          h4("Contract Curve Equation"),
-          p("The contract curve represents allocations where the marginal rate of substitution 
-            is equal for both consumers. For Cobb-Douglas utilities, this occurs when:"),
-          withMathJax("$$\\frac{\\alpha x_{2}^{1}}{(1-\\alpha) x_{1}^{1}} = \\frac{\\beta x_{2}^{2}}{(1-\\beta) x_{1}^{2}} \\text{ subject to } x_{1}^{2} = \\omega_{1}^{1} + \\omega_{1}^{2} - x_{1}^{1} \\text{ and } x_{2}^{2} = \\omega_{2}^{1} + \\omega_{2}^{2} - x_{2}^{1}$$")
+          column(
+            4,
+            h4("Utility Functions"),
+            p("Consumer 1's utility function:"),
+            withMathJax("$$U_{1}(x_{1}^{1}, x_{2}^{1}) = (x_{1}^{1})^{\\alpha} (x_{2}^{1})^{1-\\alpha}$$"),
+            p("Consumer 2's utility function:"),
+            withMathJax("$$U_{2}(x_{1}^{2}, x_{2}^{2}) = (x_{1}^{2})^{\\beta} (x_{2}^{2})^{1-\\beta}$$"),
+            br(),
+            h4("Contract Curve Equation"),
+            p("The contract curve represents allocations where the marginal rate of substitution 
+              is equal for both consumers. For Cobb-Douglas utilities, this occurs when:"),
+            withMathJax("$$\\frac{\\alpha x_{2}^{1}}{(1-\\alpha) x_{1}^{1}} = \\frac{\\beta x_{2}^{2}}{(1-\\beta) x_{1}^{2}} \\text{ subject to } x_{1}^{2} = \\omega_{1}^{1} + \\omega_{1}^{2} - x_{1}^{1} \\text{ and } x_{2}^{2} = \\omega_{2}^{1} + \\omega_{2}^{2} - x_{2}^{1}$$"),
+            h4("Equilibrium Information"),
+            verbatimTextOutput("equilibrium_info")
+          ),
+          column(
+            8,
+            plotOutput("edgeworth_plot", height = "650px")
+          )
         )
       )
     )
