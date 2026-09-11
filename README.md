@@ -4,6 +4,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
+A Shiny app to visualize an Edgeworth box with contract curve for the 2x2 exchange model using Cobb-Douglas utility functions.
+
 The goal of cobbdouglasge is to show how to plot the solutions of a 2x2 Cobb-Douglas general equilibrium model in R using Shiny.
 
 From R, install it directly from GitHub:
