@@ -6,10 +6,14 @@
 
 The goal of cobbdouglasge is to show how to plot the solutions of a 2x2 Cobb-Douglas general equilibrium model in R using Shiny.
 
-To run the app locally, clone the repository https://github.com/pachadotdev/cobbdouglasge and then from RStudio/VSCode run the following in the R console:
+From R, install it directly from GitHub:
 
 ```r
-devtools::load_all()
+if (!require(remotes)) install.packages("remotes", repos = "https://cran.r-project.org)
+
+remotes::install_github("pachadotdev/cobbdouglasge")
+
+library(cobbdouglasge)
 run_app()
 ```
 
